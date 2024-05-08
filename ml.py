@@ -15,16 +15,16 @@ def run_ml() :
     elif gender == '여자' :
         gender = 0
 
-    st.text('나이를 입력하세요')
+    st.text('나이를 입력하세요~')
     age = st.number_input('나이 입력', min_value=18, max_value=100, value=24)
 
-    st.text('연봉을 입력하세요.')
+    st.text('연봉을 입력하세요~.')
     salary = st.number_input('연봉 입력', min_value=10000, value=50000, step=1000)
 
-    st.text('카드빚을 입력하세요.')
+    st.text('카드빚을 입력하세요~.')
     debt = st.number_input('카드빚 입력', min_value=0, value=1000, step=1000)
 
-    st.text('자산을 입력하세요.')
+    st.text('자산을 입력하세요~.')
     worth = st.number_input('자산 입력', min_value=5000, value=20000, step=1000)
 
     st.subheader('버튼을 누르면 예측합니다.')

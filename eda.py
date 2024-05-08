@@ -4,7 +4,7 @@ import seaborn as sb
 import matplotlib.pyplot as plt
 
 def run_eda() :
-    st.subheader('탐색적 데이터 분석')
+    st.subheader('탐색적 데이터 분석!!')
 
     st.text('데이터프레임 보기 / 통계치 보기를 할 수 있습니다.')
 
@@ -34,7 +34,7 @@ def run_eda() :
     st.info(f'선택하신 {choice_column}의 최소 데이터는 다음과 같습니다.')
     st.dataframe(df.loc[ df[choice_column] ==  df[choice_column].min() , ])
 
-    st.subheader('상관관게 분석')
+    st.subheader('상관관계 분석')
     st.text('컬럼들을 2개 이상 선택하면, 컬럼들의 상관계수를 보여드립니다.')
 
     corr_column_list = ['Age', 'Annual Salary',	'Credit Card Debt',	'Net Worth', 'Car Purchase Amount']
